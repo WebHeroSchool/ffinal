@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 
+}
+
+.header {
+  /*border: 1px solid red;*/
+}
+
+.conteiner {
+  width: 1440px;
+  border: 1px solid red;
+   margin: 24px 60px 0 43px;
+}
+
+nav {
+  /*border: 1px solid red;*/
+}	
