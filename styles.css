@@ -1,24 +1,30 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
   font-family: 'montserrat', sans-serif;
   font-style: normal;
   color: #000;
   margin: 0;
   padding: 0;
-  width: 1440px;
+  width: 100%;
+  /* width: 1440px; */
 }
+
+/* header шапка */
+
 
 .header {
   /*border: 1px solid red;*/
 }
 
 .conteiner {
-  /*width: 1440px;*/
+  width: 1440px;
   margin: 0 auto;
-  margin-bottom: 53px;
+  margin-bottom: 0;
   border: 1px solid red;
+  width: 1440px; 
 }
 
 .menu {  
@@ -174,6 +180,9 @@ body {
   display: block;
 }
 
+ /* section основной контент */
+
+
 .main {
   margin-top: 30px;
   height: 845px;
@@ -303,12 +312,15 @@ body {
 }
 
 /*подвал*/
+
+
 .footer {
-  /*width: 1440px;*/
-  /*border: 1px solid red;*/
+  width: 1440px;
+  border: 1px solid red;
 }
 
 .container {
+
 }
 
 .footer__iner {
@@ -376,6 +388,17 @@ body {
   margin-top: 102px;
 }
 
+.blog1 {
+  display: flex;
+  align-items:center;
+  margin-top: 102px;
+  margin-bottom: 22px;
+}
+
+.blog__img {
+  align-self: center;
+}
+
 .blog__text-box1 {
   margin-left: 23px;
 }
@@ -384,6 +407,18 @@ body {
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
+}
+
+.blog__baner {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 61px;
+  margin: 0;
+}
+
+.footer__left_bottom .main__bottom {
+  margin-bottom: 60px;
 }
 
 .footer__right {
@@ -405,10 +440,10 @@ body {
 .footer__img {
   position: absolute;
   top: 171px;
-  left: 0px;
+  left: -96px;
 }
 
-/*.footer__info {
+.footer__info {
   font-weight: 600;
   font-size: 17px;
   line-height: 15px;
@@ -417,8 +452,8 @@ body {
   display: flex;
   align-items: flex-start;
 }
-*/
-/*.footer__info img {
+
+.footer__info img {
   align-self: center;
 }
 
@@ -439,7 +474,11 @@ body {
   left: 503px;
   align-items: flex-end;
   width: 233px;
-} */ 
+}  
+
+@media (max-width: 1385px)
+
+/* адаптив под планшет */
 
 @media (max-width: 769px) and (min-width: 380px)  {
   .conteiner {
@@ -581,7 +620,154 @@ body {
   	text-align: center;
   	justify-content: center;
   }
+
+  .footer {
+    /* width: 768px;
+     border: 1px solid red; */
+     margin: 0;
+     padding: 0;
+  }
+
+  .footer .container {
+    width: 768px;
+    border: 1px solid red;
+  }
+
+  .footer__iner {
+    flex-direction: column;
+  }
+
+  .footer__left {
+    border: 1px solid red;
+    width: 768px;
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer__left_head, .footer__left_body {
+    width: 50%;
+  } 
+
+  .footer__left_head {
+    padding-left: 34px;
+    padding-top: 63px;
+  }
+  
+  .footer__left_head  h3 {
+    margin: 0;
+    width: 316px;
+    height: 74px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 12px;
+  }
+
+  
+  .footer__left_head p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    width: 316px;
+    height: 134px;
+  }
+
+  .footer__left_body {
+    padding-right: 84px;
+    padding-top: 63px;
+
+  }
+
+  .footer__left_body h3 {
+    margin: 0;
+    margin-bottom: 29px;
+  }
+
+  .rating {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  
+  .footer__left_bottom {
+    margin: 70px auto 63px;
+    width: 100%;
+  }
+
+  .footer__left_bottom .main__bottom {
+     margin: 0;
+  }
+
+  .footer__left_bottom .information {
+    margin: 0;
+    margin-right: 36px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .footer__left_bottom .information img {
+    width: 31px;
+    height: 31px;
+  }
+
+  .blog1 {
+    display: none;
+  }
+  .blog__img {
+  }
+  .blog__text-box1 {
+  }
+  .blog__baner {
+  }
+  .blog__text1 {
+  }
+
+  .footer__right {
+    border: 1px solid red;
+    order: 1;
+    height: 579px;
+  }
+
+  .footer__model_text {
+    width: 665px;
+    top: 37px;
+    left: 158px;
+    font-weight: 600;
+    font-size: 148px;
+    line-height: 180px;  
+  }
+
+  .footer__img {
+    width: 750px;
+    left: -14px;
+    width: 761px;
+    top: 117px;
+    height: 446px;
+  }
+
+  .footer__info.item-1 {
+    left: 175px;
+    top: 75px;
+    width: 172.68px;
+  }
+
+  .footer__info.item-2 {
+    left: 378px;
+    top: 57px;
+    width: 173px;
+  }
+
+  .footer__info.item-3 {
+    top: 416px;
+    left: 418px;
+    align-items: flex-end;
+    width: 233px;
+  }
 }
+
+/* мобилка */
 
 
 @media (max-width: 380px) {
