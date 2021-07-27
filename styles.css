@@ -8,7 +8,7 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
-  width: 100%;
+  /* width: 100%; */
   /* width: 1440px; */
 }
 
@@ -20,45 +20,64 @@ body {
 }
 
 .conteiner {
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 0;
-  border: 1px solid red;
-  width: 1440px; 
+  margin-bottom: 87px;
+  /* border: 1px solid red; */
 }
 
 .menu {  
+  width: 120%;
   display: flex;
+  list-style-type: none;
   align-items: center;
   justify-content: space-between;
-  margin: 24px 60px 0 43px;
-  /*border: 1px solid red;*/
+  margin-bottom: 41px;
+  /* margin: 24px 60px 0 43px; */
 }	
+
+.logo { 
+  margin: 13px 53px 19px 42px;
+}
+
+.menu_1 {
+  margin-top: 7px;
+}
 
 .menu_1, .menu_2 {
   padding: 0;
   display: flex;
   list-style: none;
   justify-content: space-between;
-  /*border: 1px solid red;*/
 }
 
-.menu_2 .menu__item {
-	margin: 30px;
+.menu_2 {
+  width: 15%;
+  margin-top: 7px;
 }
+
+.menu_2 img {
+  margin-left: 12px;
+}
+
+
+.menu_2 .menu__item {
+	margin: 17px;
+}
+
 .menu__item {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
   text-decoration: none;
   font-style: normal;
   color: #000;
   padding-bottom: 6px;
-  border-bottom: 2px transparent solid;
+  border-bottom: 5px transparent solid;
   transition: 0.2s; 
 }
 
-.menu__item:hover, .menu__item_active {
+.menu__item:hover, .menu__item active {
   border-bottom: 2px #E51937 solid; 
   color: #E51937;
 }
@@ -84,31 +103,33 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  min-height: 594px;
-  margin-bottom: 26px;
+  min-height: 586px;
+  margin-bottom: 27px;
 }
 
 .titlee__banner {
+  margin-top: 2px;
   padding: 0;
-  margin: 0;
-  font-weight: 600;
-  font-size: 90px;
-  line-height: 110px;
+  margin-right: 37px;
+  font: 600 91px/110px 'montserrat-bold', sans-serif;
+  margin-left: 59px;
+  margin-bottom: 0;
 }
 
 .titlee__short {
+  margin-left: 18px;
+  margin-top: -6px;
   padding: 0;
-  margin: 0;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 17px;
+  line-height: 0px;
 }
 
 .tesla_info {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 38px;
+  margin-bottom: 28px;
 }
 
 .info__block {
@@ -117,39 +138,24 @@ body {
   margin-right: 81px;
 }
 .info__block_img {
-  width: 57px;
-  margin-right: 14px;
+  width: 380px;
+  margin-left: 148px;
 }
 
-.info__block_text1 {
-  font-weight: 600;
-  font-size: 35px;
-  line-height: 43px;
-  margin-right: 6px;
-  margin-bottom: 1px;
-}
-
-.info__block_text1 span {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 33px;
-  vertical-align: bottom;
-}
-
-.info__block_text2 {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+.info__block2 {
+  display: flex;
+  align-items: center;
+  /* margin-right: 81px; */
 }
 
 .test_driive {
   cursor: pointer;
-  margin-left: 24px;
-  margin-right: 40px;
+  margin-left: 26px;
+  margin-right: 0px;
   display: flex;
   align-items: center;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
@@ -157,99 +163,107 @@ body {
 }
 
 .test_driive img {
-  margin-right: 7px;
+  margin-right: 5px;
 
 }
 
-.order {
+.order-one {
   font-weight: bold;
-  font-size: 13px;
-  line-height: 40px;
+  font-size: 14px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   color: #E51937;
   border: 2px solid #E51937;
   min-width: 160px;
   min-height: 40px;
-  margin-left: 22px;
   cursor: pointer;
+  margin-right: 137px;
+  margin-left: 45px;
 }
 
 .go_bottom {
   text-align: center;
   display: block;
+  margin-bottom: 0;
 }
 
  /* section основной контент */
 
 
 .main {
+  width: 100%;
+  margin-bottom: 5px;
   margin-top: 30px;
-  height: 845px;
+  height: 835px;
   color: #fff;	
 }
 
 .main__inner {
-  background-image: url(img/2013-tesla-model-s-cockpit.png); 
+  background-image: url(img/2013-tesla-model-s-cockpit.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
   display: flex;
+  background-position: 0% 10%;
   justify-content: space-between;
   width: 100%;
-  /*background-size: contain;*/
 }
 
 .main__left {
-  margin-left: 80px;
-  font-weight: 600;
-  font-size: 70px;
-  line-height: 85px;
+  margin-left: 1px;
+  font: 600 46px/85px 'montserrat-bold', sans-serif;
   color: #E51937;	
 }
 
 .main__left h2 {
-  margin-top: 10px;
+  margin-top: 9px;
   margin-left: 80px;
 }
 
 .main__right {
-  width: 440px;
+  width: 34.3%;
+  margin-top: -59px;
   background: #E51937;
-  padding: 51px 50px 63px 52px;	
+  padding: 51px 50px 63px 49px;	
 }
+
 .main__top h3 {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 37px;
+  font: 600 33px/35px 'montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  /* margin-right: 11px; */
 }
 
 .main__top p {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 18px;
+  font: 501 17px/19px 'montserrat', sans-serif;
   margin: 0;
+  height: 203px;
   padding: 0;
-  margin-top: 11px;	
-  margin-bottom: 54px;	
+  width: 94%;
+  margin-top: 14px;
+  margin-bottom: 55px;
 }
 
 .box__blog {
-  margin-bottom: 118px;
+  margin-bottom: 169px;
 }
 
-.blog {
+.blog-mini {
   display: flex;
-  align-items: center;
-  margin-bottom: 35px;
-	
+  margin-top: 55px;
+  margin-bottom: 36px;
+}
+
+.blog-mini1 {
+  display: flex;
+  margin-bottom: 24px;
 }
 
 .blog__img {
-  align-self: center;
-  margin-right: 19px;
+  /* align-self: center; */
+  /* margin-right: 19px; */
 }
+
 .blog__text-box {
   margin-right: 63px;
 }
@@ -280,6 +294,7 @@ body {
   line-height: 16px;
   margin: 0;
 }
+
 .main__bottom {
   display: flex; 
 }
@@ -293,34 +308,40 @@ body {
  text-align: center;
  text-transform: uppercase;
  margin-right: 0px;
-
 }
 
 .information img {
   align-self: center;  	
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .information a {
   text-decoration: none;
   color: #fff;
+  margin-right: 17px;
 }
 
-.inverse__button {
+.order-two {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
   color: #fff;
-  border-color: #fff;	
+  border: 2px solid #fff;
+  min-width: 156px;
+  min-height: 35px;
+  cursor: pointer;
+  margin-right: -39px;
+  margin-left: 22px;
 }
 
 /*подвал*/
 
-
-.footer {
-  width: 1440px;
-  border: 1px solid red;
-}
-
 .container {
-
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid red;
 }
 
 .footer__iner {
@@ -330,48 +351,50 @@ body {
 .footer__left {
   color: #fff;
   background: #e51937;
-  width: 440px;
+  width: 30%;
 }
 
 .footer__left_head h3 {
-  margin: 51px 68px 12px 56px;
+  margin: 50px 68px 12px 55px;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 37px;
 }
 
 .footer__left_head p {
-  margin: 0px 68px 49px 56px;
+  margin: 0px 56px 57px 55px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
+  width: 74%;
   line-height: 18px;
 }
 
+
 .footer__left_body h3 {
-  margin-bottom: 29px; 
-  margin-left: 56px;
+  margin-bottom: 26px;
+  margin-left: 55px;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 37px;
-  width: 263px;
+  /* width: 258px; */
 }
 
 .rating {
-  margin-left: 56px;
-  margin-bottom: 16px;
-  margin-right: 80px;
+  margin-left: 55px;
+  margin-bottom: 9px;
+  margin-right: 95px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-weight: bold;
-  font-size: 17px;
-  line-height: 21px;
+  font-size: 15px;
+  line-height: 20px;
   text-transform: uppercase;
 }
 
 .rating__title {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
 }
@@ -390,9 +413,9 @@ body {
 
 .blog1 {
   display: flex;
-  align-items:center;
-  margin-top: 102px;
-  margin-bottom: 22px;
+  align-items: center;
+  margin-top: 103px;
+  margin-bottom: 59px;
 }
 
 .blog__img {
@@ -405,20 +428,22 @@ body {
 
 .blog__text1 {
   font-weight: 600;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 27px;
+  line-height: 14px;
   margin: 0;
 }
 
 .blog__baner {
   font-weight: 600;
-  font-size: 50px;
-  line-height: 61px;
+  font-size: 52px;
+  line-height: 60px;
   margin: 0;
 }
 
 .footer__left_bottom .main__bottom {
-  margin-bottom: 60px;
+  margin-left: -30px;
+  margin-top: 66px;
+  margin-bottom: 61px;
 }
 
 .footer__right {
@@ -426,26 +451,24 @@ body {
 }
 
 .footer__model_text {
-  font-weight: 600;
-  width: 962px;
-  font-size: 200px;
-  line-height: 244px;
+  font: 600 200px/244px 'montserrat-bold', sans-serif;
+  width: 90%;
   position: absolute;
   color: #e51937;
   opacity: 0.1;
-  top: 48px;
-  left: 244px;
+  top: 106px;
+  left: 189px;
 }
 
 .footer__img {
   position: absolute;
-  top: 171px;
+  top: 222px;
   left: -96px;
 }
 
 .footer__info {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 15px;
   color: #000;
   position: absolute;
@@ -458,31 +481,74 @@ body {
 }
 
 .footer__info.item-1 {
-  left: 169px;
-  top: 174px;
-  width: 172.68px;
+  left: 170px;
+  top: 221px;
+  /* width: 172.68px; */
 }
 
 .footer__info.item-2 {
   left: 447px;
-  top: 122px;
-  width: 173px;
+  top: 173px;
+  /* width: 173px; */
 }
 
 .footer__info.item-3 {
-  top: 538px;
+  top: 589px;
   left: 503px;
   align-items: flex-end;
-  width: 233px;
-}  
+  /* width: 256px; */
+} 
 
-@media (max-width: 1385px)
+.information-foter {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: -31px;
+ 
+ }
+ 
+ .information-foter img {
+  align-self: center;
+  margin-right: 10px;
+}
+
+ 
+ .information-foter a {
+   text-decoration: none;
+   color: #fff;
+ }
+ 
+ .order-inverse__button {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #fff;
+  min-width: 155px;
+  min-height: 40px;
+  cursor: pointer;
+  margin-right: 0px;
+  margin-left: 66px;
+ }
+
 
 /* адаптив под планшет */
 
+
+
 @media (max-width: 769px) and (min-width: 380px)  {
   .conteiner {
-  	width: 769px;
+  	/* width: 769px; */
+  }
+
+  .logo {
+    margin: 0px 25px 2px -1px;
   }
 
   .menu__item_active, .menu__item {
@@ -493,14 +559,32 @@ body {
     margin: 24px 33px 80px 15px;
   }
 
-  .titlee__banner {
-    font-size: 90px;
-    line-height: 110px;
+  .menu_2 img {
+    /* width: 35px; */
+    margin-right: 19px;
+  }
+
+  .titlee-one {
+    text-align: center;
+    background-image: url(img/teslaa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 586px;
+    margin-bottom: 30px;
+    width: 76%;
   }
 
   .titlee__short {
-    font-size: 15px;
-    line-height: 18px  
+    font-size: 17px;
+    line-height: 0px;
+    margin-top: -5px;
+  }
+  
+  .titlee__short {
+      margin-top: -5px;
+      padding: 0;
+      font-weight: 500;
   }  
 
   .tesla_info {
@@ -523,7 +607,7 @@ body {
   }
 
   .info__block:nht-child(2) .info__block_img {
-  	width: 38px;
+  	/* width: 38px; */
   }
 
   .info__block_img {
@@ -559,12 +643,12 @@ body {
   }
 
    .test_driive img {
-   	width: 30px;
+   	/* width: 30px; */
    	height: 30px;
    }
 
   .order {
-  	width: 220px;
+  	/* width: 220px; */
   	height: 55px;
   	font-size: 16px;
   	line-height: 55px;
@@ -622,12 +706,9 @@ body {
   }
 
   .footer {
-    /* width: 768px;
-     border: 1px solid red; */
-     margin: 0;
-     padding: 0;
   }
-
+ 
+  
   .footer .container {
     width: 768px;
     border: 1px solid red;
@@ -638,7 +719,6 @@ body {
   }
 
   .footer__left {
-    border: 1px solid red;
     width: 768px;
     order: 2;
     display: flex;
@@ -715,14 +795,6 @@ body {
   .blog1 {
     display: none;
   }
-  .blog__img {
-  }
-  .blog__text-box1 {
-  }
-  .blog__baner {
-  }
-  .blog__text1 {
-  }
 
   .footer__right {
     border: 1px solid red;
@@ -731,7 +803,7 @@ body {
   }
 
   .footer__model_text {
-    width: 665px;
+    width: 609px;
     top: 37px;
     left: 158px;
     font-weight: 600;
@@ -770,9 +842,13 @@ body {
 /* мобилка */
 
 
+
 @media (max-width: 380px) {
+
   .conteiner {
-  	width: 375px;
+    margin: 0 auto;
+    width: 375px;
+    border: 1px solid red;
   }
 
   .menu__item_active, .menu__item {
@@ -869,7 +945,7 @@ body {
   }
 
   .main__right {
-  	width: 378px;
+  	width: 375px;
   	background: url(img/2013-tesla-model-s-cockpit.png);
   	background-size: contain;
   	background-repeat: no-repeat;
@@ -881,11 +957,105 @@ body {
   	display: none;
   }
 
+  .main__top h3{
+    margin: 18px 55px 9px 29px;
+    width: 316px;
+  }
+
   .main__top p {
-    width: 110%;
+    width: 89%;
+    margin: 9px 54px 34px 30px;
     font-size: 16px;
     line-height: 18px;
   }
+
+  .footer .container {
+     width: 378px;
+  }
+
+  .footer__iner {
+    flex-direction: column;
+  }
+
+  .footer__left_body, .footer__left_bottom {
+    display: none;
+  }
+  .footer__left {
+    width: 100%;
+    order: 2;
+  }
+
+  .footer__left_head h3 {
+    margin: 18px 17px 11px 42px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    width: 316px;
+  }
+
+  .footer__left_head p {
+    margin-left: 42px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    width: 289px; 
+      
+  }
+
+  .footer__right {
+    overflow: hidden;
+    height: 396px;
+    order: 1;
+    
+  }
+
+  .footer__model_text {
+    top: 115px;
+    left: 20px;
+    font-size: 100px;
+    line-height: 118px;
+  }
+
+  .footer__img {
+    width: 361.83px;
+    left: -7px;
+    top: 160px;
+  }
+
+  .footer__info{
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 6px;    
+  }
+
+  .footer__info.item-1 img {
+    height: 93px;
+  }
+
+  .footer__info.item-1 {
+    left: 84px;
+    top: 163px;
+    width: 59px;
+  }
+
+  .footer__info.item-2 img {
+    height: 42px;
+  }
+
+  .footer__info.item-2 {
+    left: 180px;
+    top: 147px;
+    width: 59px;
+  }
+
+
+  .footer__info.item-3 img {
+    height: 37px;
+  }
+  .footer__info.item-3 {
+    top: 287px;
+    left: 200px;
+    align-items: flex-end;
+    width: 80px;
+  }
 }
-
-
